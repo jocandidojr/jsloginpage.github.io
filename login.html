@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        body {
+            font-family: "Roboto", sans-serif;
+            background-image: linear-gradient(to right, #00153E, #002467, #17357D);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .navbar {
+            width: 100%;
+            background-color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 5px 10px;
+            position: fixed;
+            top: 0;
+        }
+        .navbar a {
+            color: #00153E;
+            text-decoration: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .navbar a:hover {
+            background-color: #1693A5;
+        }
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+        }
+        img.logo-box {
+            max-width: 350px;
+            background-color: #1693A5;
+            padding: 48px;
+            border-radius: 15px;
+        }
+        .login-box {
+            color: white;
+            background-color: #17357D;
+            max-width: 350px;
+            padding: 60px;
+            border-radius: 15px;
+        }
+        h1 {
+            text-align: center;
+        }
+        button {
+            color: white;
+            font-size: 15px;
+            width: 100%;
+            border: none;
+            background-image: linear-gradient(to right, rgb(0, 80, 172), rgb(22, 147, 165));
+            border-radius: 5px;
+            cursor: pointer;
+            padding: 8px;
+        }
+        input {
+            padding: 8px;
+            border: none;
+            outline: none;
+            border-radius: 5px;
+            font-size: 15px;
+            width: calc(100% - 16px); 
+        }
+        button:hover {
+            background-image: linear-gradient(to right, rgb(22, 147, 165), rgb(0, 80, 172));
+        }
+        .cadastro{
+            display: block;
+            text-align: center;
+            color: white;
+            font-size: 15px;
+            border: none;
+            background-image: linear-gradient(to right, rgb(22, 147, 165), rgb(0, 80, 172));
+            border-radius: 5px;
+            cursor: pointer;
+            padding: 8px;
+            text-decoration: none;
+        }
+        .cadastro:hover {
+            background-image: linear-gradient(to right, rgb(0, 80, 172), rgb(22, 147, 165));
+        }
+        @media (max-width: 360px) {
+            img.logo-box {
+                display: none;
+            }
+            .login-box {
+                margin: 0;
+            }
+        }
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+            .login-box {
+                margin-left: 0;
+                margin-top: 20px;
+            }
+        }
+    </style>
+</head> 
+<body>
+    <div class="navbar">
+        <a href="#">JS System</a>
+        <div>
+            <a href="https://wa.me/5583996457553">Suporte ao usuario</a>
+        </div>
+    </div>
+    <div class="container">
+        <img src="https://lh3.googleusercontent.com/u/0/drive-viewer/AKGpihYePTsqvj_OVoj8IS58Q3KWTUkmkNeiKZymXQgmFudNT8lByk0IFGJ_lGr6a5bN2oQUdal3tzTtoL4EtY82P-oAhz-1NxCsivI=w1920-h868" class="logo-box" alt="Logo">
+        <div class="login-box">
+            <h1>Login</h1>
+            <input type="text" placeholder="Usuário" />
+            <br><br>
+            <input type="password" placeholder="Senha" />
+            <br><br>
+            <button>Entrar</button>
+            <br><br>
+            <a href="https://login.jotasti.com.br" class="cadastro">Criar conta</a>
+        </div>
+    </div>
+</body>
+</html>
